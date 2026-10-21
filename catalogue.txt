@@ -1,14 +1,14 @@
 ; Catalogue des voitures addons de MWCoop, lu par le lanceur (onglet Addons). Genere par publier.py.
 
 [evo3]
-Version=1.6
+Version=1.7
 Nom=Lanzer Ebo III
 NomCourt=Ebo III
 Description=Gr. A 1996 · 370 ch · 4 roues motrices
 DescriptionEn=Gr. A 1996 · 370 hp · four-wheel drive
 Livree=1
-Taille=13697735
-Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/evo3-1.6/evo3-1.6.zip
+Taille=13698064
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/evo3-1.7/evo3-1.7.zip
 Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/evo3.png
 ModMin=1.7.2
 
