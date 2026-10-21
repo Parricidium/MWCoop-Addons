@@ -93,8 +93,10 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         st = os.path.join(tmp, cle)
         shutil.copytree(src, st)
-        for f in ("infos.txt",):   # (notes de conversion)
-            if os.path.exists(os.path.join(st, f)): os.remove(os.path.join(st, f))
+        # (infos.txt GARDE : positions des roues, du volant, des charnieres et des feux, lues par le mod -- l'avoir retire
+        # dans les premiers paquets du 21/10 donnait des roues du jeu trop hautes et un apercu sans roues, retour de JD)
+        if not os.path.exists(os.path.join(st, "infos.txt")):
+            sys.exit("infos.txt manquant dans " + src + " : le mod ne placerait pas les roues")
         lignes = [l for l in open(os.path.join(st, "addon.ini"), encoding="utf-8-sig").read().splitlines() if not l.startswith("Version=")]
         lignes.insert(1 if lignes and lignes[0].startswith("[") else 0, "Version=" + ver)
         open(os.path.join(st, "addon.ini"), "w", encoding="utf-8", newline="\r\n").write("\n".join(lignes) + "\n")
