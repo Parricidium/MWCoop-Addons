@@ -13,14 +13,14 @@ Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/
 ModMin=1.7.2
 
 [imp96]
-Version=1.1
+Version=1.2
 Nom=Subaro Imprezza 95
 NomCourt=Imprezza 95
 Description=Gr. A 1995 · 300 ch · 4 roues motrices
 DescriptionEn=Gr. A 1995 · 300 hp · four-wheel drive
 Livree=1
-Taille=12708140
-Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/imp96-1.1/imp96-1.1.zip
+Taille=12708466
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/imp96-1.2/imp96-1.2.zip
 Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/imp96.png
 ModMin=1.7.2
 
