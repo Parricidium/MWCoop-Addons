@@ -24,6 +24,18 @@ Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/imp96-1.2/
 Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/imp96.png
 ModMin=1.7.2
 
+[sq84]
+Version=1.0
+Nom=Audy Sport Quatro
+NomCourt=Sport Quatro
+Description=Gr. B 1984 · 450 ch · 4 roues motrices
+DescriptionEn=Gr. B 1984 · 450 hp · four-wheel drive
+Livree=1
+Taille=15371192
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/sq84-1.0/sq84-1.0.zip
+Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/sq84.png
+ModMin=1.8.5
+
 [t16]
 Version=1.3
 Nom=Peujot 205 T16 Ebo 1
