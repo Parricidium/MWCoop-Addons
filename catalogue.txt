@@ -25,14 +25,14 @@ Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/
 ModMin=1.7.2
 
 [sq84]
-Version=1.2
+Version=1.3
 Nom=Audy Sport Quatro
 NomCourt=Sport Quatro
 Description=Gr. B 1984 · 450 ch · 4 roues motrices
 DescriptionEn=Gr. B 1984 · 450 hp · four-wheel drive
 Livree=1
-Taille=15348211
-Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/sq84-1.2/sq84-1.2.zip
+Taille=15366306
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/sq84-1.3/sq84-1.3.zip
 Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/sq84.png
 ModMin=1.8.5
 
