@@ -4,6 +4,7 @@
 # Fait : paquet <cle>-<version>.zip (<cle>\..., Version= ajoute a addon.ini, LISEZMOI public), apercus\<cle>.png,
 # section [<cle>] de catalogue.txt, release <cle>-<version> sur GitHub (jamais remplacee : une nouvelle version = une
 # nouvelle release), commit et push du catalogue. --sec : prepare seulement (rien sur GitHub).
+# Categorie= de addon.ini (Gr. A, Gr. B...) recopiee dans le catalogue : filtre de l'onglet Addons et du F10 (23/10).
 # Retrait d'une voiture (un createur la reconnait) : python -I publier.py --retirer <cle> (section enlevee du catalogue ;
 # les lanceurs ne la proposent plus), puis supprimer ses releases a la main.
 import os, re, shutil, subprocess, sys, tempfile, zipfile
@@ -111,7 +112,7 @@ def main():
     url = f"https://github.com/{DEPOT}/releases/download/{cle}-{ver}/{cle}-{ver}.zip"
     s = lire_catalogue()
     s[cle] = [f"Version={ver}", f"Nom={nom}", f"NomCourt={court}", f"Description={ini.get('Description', '')}",
-              f"DescriptionEn={ini.get('DescriptionEn', '')}", f"Livree={ini.get('Livree', '0')}", f"Taille={taille}",
+              f"DescriptionEn={ini.get('DescriptionEn', '')}", f"Categorie={ini.get('Categorie', '')}", f"Livree={ini.get('Livree', '0')}", f"Taille={taille}",
               f"Paquet={url}", f"Apercu=https://raw.githubusercontent.com/{DEPOT}/main/apercus/{cle}.png", f"ModMin={modmin}"]
     ecrire_catalogue(s)
     print(f"{cle} {ver} : {paquet} ({taille} octets)")
