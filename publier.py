@@ -110,10 +110,18 @@ def main():
     shutil.copyfile(os.path.join(src, "apercu.png"), os.path.join(ICI, "apercus", cle + ".png"))
     taille = os.path.getsize(paquet)
     url = f"https://github.com/{DEPOT}/releases/download/{cle}-{ver}/{cle}-{ver}.zip"
+    # My Summer Car (lanceur 1.14) : apercu-msc.png de l'addon -> apercus\<cle>-msc.png, ApercuMsc= ; Jeux= et ModMinMsc= de
+    # la section precedente gardes
+    if os.path.exists(os.path.join(src, "apercu-msc.png")):
+        shutil.copyfile(os.path.join(src, "apercu-msc.png"), os.path.join(ICI, "apercus", cle + "-msc.png"))
     s = lire_catalogue()
+    vieux = {l.split("=", 1)[0]: l for l in s.get(cle, []) if "=" in l}
+    if os.path.exists(os.path.join(ICI, "apercus", cle + "-msc.png")):
+        vieux["ApercuMsc"] = f"ApercuMsc=https://raw.githubusercontent.com/{DEPOT}/main/apercus/{cle}-msc.png"
     s[cle] = [f"Version={ver}", f"Nom={nom}", f"NomCourt={court}", f"Description={ini.get('Description', '')}",
               f"DescriptionEn={ini.get('DescriptionEn', '')}", f"Categorie={ini.get('Categorie', '')}", f"Livree={ini.get('Livree', '0')}", f"Taille={taille}",
               f"Paquet={url}", f"Apercu=https://raw.githubusercontent.com/{DEPOT}/main/apercus/{cle}.png", f"ModMin={modmin}"]
+    s[cle] += [vieux[k] for k in ("Jeux", "ApercuMsc", "ModMinMsc") if k in vieux]
     ecrire_catalogue(s)
     print(f"{cle} {ver} : {paquet} ({taille} octets)")
     if sec:
