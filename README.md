@@ -19,9 +19,10 @@ unzip it into `<game>\MWCoop\addons`.
 3D models, textures and sounds come from the rFactor 1 **"Rally Cars" (RC)** mod; all credit goes to their
 original authors. Brand names and logos were removed, and the cars were converted for MWCoop by Parricidium.
 
-**Are you one of the original authors?** If you want your work removed, open an
-[issue](https://github.com/Parricidium/MWCoop-Addons/issues) or say so on the MWCoop Discord: it will be taken
-down.
+## Add-on car 3D models
+
+These models come from old mods (rFactor, more than 10 years old) found on a Discord server, without an author name. They are offered for free, with no commercial purpose.
+If you recognise your work, contact us: open an issue on this repository or message us on the MWCoop Discord (link in the launcher). Your choice: we **add your name to the credits** or we **remove the model within 48 hours**. ❤️
 
 ---
 
@@ -33,7 +34,11 @@ Des voitures en plus pour [MWCoop](https://github.com/Parricidium/MWCoop), le mo
 même bouton (**Mettre à jour**). En jeu : F10, onglet *Voitures*.
 
 Modèles 3D, textures et sons : mod rFactor 1 « Rally Cars » (RC), tout le mérite revient à leurs auteurs d'origine ;
-marques et logos retirés, conversion pour MWCoop par Parricidium. Un auteur d'origine veut que son travail soit
-retiré : une issue ou un mot sur le Discord de MWCoop, et c'est fait.
+marques et logos retirés, conversion pour MWCoop par Parricidium.
+
+## Modèles 3D des voitures addons
+
+Ces modèles viennent d'anciens mods (rFactor, plus de 10 ans) récupérés sur un Discord, sans nom d'auteur. Ils sont proposés gratuitement, sans aucun but commercial.
+Si vous reconnaissez votre travail, contactez-nous : ouvrez une issue sur ce dépôt ou écrivez-nous sur le Discord de MWCoop (lien dans le lanceur). Au choix, nous **ajoutons votre nom aux crédits** ou nous **retirons le modèle sous 48 h**. ❤️
 
 `catalogue.txt` is read by the launcher; `publier.py` publishes a car (package, release, catalogue).
