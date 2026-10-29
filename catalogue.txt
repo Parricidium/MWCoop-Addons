@@ -61,15 +61,17 @@ ModMin=1.8.5
 ApercuMsc=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/sq84-msc.png
 
 [t16e2]
-Version=1.1
+Version=1.2
 Nom=Peujot 205 T16 Ebo 2
 NomCourt=205 Ebo 2
 Description=Gr. B 1986 · 450 ch · 4 roues motrices
 DescriptionEn=Gr. B 1986 · 450 hp · four-wheel drive
 Categorie=Gr. B
 Livree=1
-Taille=17684654
-Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/t16e2-1.1/t16e2-1.1.zip
+Taille=17010237
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/t16e2-1.2/t16e2-1.2.zip
 Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/t16e2.png
-ModMin=1.12.0
+ModMin=1.15.26
 ApercuMsc=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/t16e2-msc.png
+ModMinMsc=1.15.45
+EtiquetteMsc=Standalone
