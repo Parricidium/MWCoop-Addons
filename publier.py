@@ -1,6 +1,6 @@
 # Publie une voiture addon de MWCoop (demande de JD, 21/10 : les voitures a part, telechargees et mises a jour par le
 # lanceur, onglet Addons). Depuis ce dossier :
-#   python -I publier.py <dossier de l'addon, ex. ...\extension\MWCoop\addons\t16> <version> [--modmin 1.7.2] [--sec]
+#   python -I publier.py <dossier de l'addon, ex. ...\extension\MWCoop\addons\t16> <version> [--modmin 1.7.2] [--modminmsc 1.15.34] [--sec]
 # Fait : paquet <cle>-<version>.zip (<cle>\..., Version= ajoute a addon.ini, LISEZMOI public), apercus\<cle>.png,
 # section [<cle>] de catalogue.txt, release <cle>-<version> sur GitHub (jamais remplacee : une nouvelle version = une
 # nouvelle release), commit et push du catalogue. --sec : prepare seulement (rien sur GitHub).
@@ -83,6 +83,7 @@ def main():
         return retirer(a[1])
     sec = "--sec" in a
     modmin = a[a.index("--modmin") + 1] if "--modmin" in a else "1.7.2"
+    modminmsc = a[a.index("--modminmsc") + 1] if "--modminmsc" in a else None
     src, ver = os.path.abspath(a[0]), a[1]
     cle = os.path.basename(src.rstrip("\\/"))
     ini = lire_ini(os.path.join(src, "addon.ini"))
@@ -121,7 +122,14 @@ def main():
     s[cle] = [f"Version={ver}", f"Nom={nom}", f"NomCourt={court}", f"Description={ini.get('Description', '')}",
               f"DescriptionEn={ini.get('DescriptionEn', '')}", f"Categorie={ini.get('Categorie', '')}", f"Livree={ini.get('Livree', '0')}", f"Taille={taille}",
               f"Paquet={url}", f"Apercu=https://raw.githubusercontent.com/{DEPOT}/main/apercus/{cle}.png", f"ModMin={modmin}"]
-    s[cle] += [vieux[k] for k in ("Jeux", "ApercuMsc", "ModMinMsc") if k in vieux]
+    # Etiquette= / EtiquetteMsc= (badge de la carte Addons, lanceur 1.16.5 : « Standalone ») : de addon.ini s'il en a, sinon gardes ;
+    # --modminmsc fixe ModMinMsc= (premiere publication d'une voiture, sinon garde)
+    for k in ("Etiquette", "EtiquetteMsc"):
+        if ini.get(k):
+            vieux[k] = f"{k}={ini[k]}"
+    if modminmsc:
+        vieux["ModMinMsc"] = f"ModMinMsc={modminmsc}"
+    s[cle] += [vieux[k] for k in ("Jeux", "ApercuMsc", "ModMinMsc", "Etiquette", "EtiquetteMsc") if k in vieux]
     ecrire_catalogue(s)
     print(f"{cle} {ver} : {paquet} ({taille} octets)")
     if sec:
