@@ -33,19 +33,19 @@ ModMinMsc=1.15.45
 EtiquetteMsc=Standalone
 
 [r5maxi]
-Version=1.1
+Version=1.2
 Nom=Rihno 5 Maxi Turbo
 NomCourt=Rihno 5 Maxi
 Description=Gr. B 1985 · 355 ch · propulsion, moteur central
 DescriptionEn=Gr. B 1985 · 355 hp · rear-wheel drive, mid engine
 Categorie=Gr. B
 Livree=1
-Taille=17734706
-Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/r5maxi-1.1/r5maxi-1.1.zip
+Taille=17734515
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/r5maxi-1.2/r5maxi-1.2.zip
 Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/r5maxi.png
-ModMin=1.15.15
+ModMin=1.15.26
 ApercuMsc=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/r5maxi-msc.png
-ModMinMsc=1.15.34
+ModMinMsc=1.15.45
 EtiquetteMsc=Standalone
 
 [sq84]
