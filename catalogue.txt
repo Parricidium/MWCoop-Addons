@@ -28,6 +28,22 @@ Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/
 ModMin=1.7.2
 ApercuMsc=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/imp96-msc.png
 
+[r5maxi]
+Version=1.0
+Nom=Rihno 5 Maxi Turbo
+NomCourt=Rihno 5 Maxi
+Description=Gr. B 1985 · 355 ch · propulsion, moteur central
+DescriptionEn=Gr. B 1985 · 355 hp · rear-wheel drive, mid engine
+Categorie=Gr. B
+Livree=1
+Taille=17894669
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/r5maxi-1.0/r5maxi-1.0.zip
+Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/r5maxi.png
+ModMin=1.15.15
+ApercuMsc=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/r5maxi-msc.png
+ModMinMsc=1.15.34
+EtiquetteMsc=Standalone
+
 [sq84]
 Version=1.3
 Nom=Audy Sport Quatro
