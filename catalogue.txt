@@ -1,19 +1,19 @@
 ; Catalogue des voitures addons de MWCoop, lu par le lanceur (onglet Addons). Genere par publier.py.
 
 [delta8]
-Version=1.0
+Version=1.1
 Nom=Lancha Delta Ebo II
 NomCourt=Delta Ebo II
 Description=Gr. A 1993 · 295 ch · 4 roues motrices
 DescriptionEn=Gr. A 1993 · 295 hp · four-wheel drive
 Categorie=Gr. A
 Livree=1
-Taille=18884140
-Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/delta8-1.0/delta8-1.0.zip
+Taille=19069681
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/delta8-1.1/delta8-1.1.zip
 Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/delta8.png
-ModMin=1.15.42
+ModMin=1.15.43
 ApercuMsc=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/delta8-msc.png
-ModMinMsc=1.15.74
+ModMinMsc=1.15.75
 Etiquette=Standalone, RallyWorld
 EtiquetteMsc=Standalone, RallyWorld
 
