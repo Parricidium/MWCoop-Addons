@@ -34,19 +34,19 @@ ModMinMsc=1.15.45
 EtiquetteMsc=Standalone
 
 [imp96]
-Version=1.4
+Version=1.5
 Nom=Subaro Imprezza 95
 NomCourt=Imprezza 95
 Description=Gr. A 1995 · 300 ch · 4 roues motrices
 DescriptionEn=Gr. A 1995 · 300 hp · four-wheel drive
 Categorie=Gr. A
 Livree=1
-Taille=20915803
-Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/imp96-1.4/imp96-1.4.zip
+Taille=20983860
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/imp96-1.5/imp96-1.5.zip
 Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/imp96.png
-ModMin=1.15.42
+ModMin=1.15.43
 ApercuMsc=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/imp96-msc.png
-ModMinMsc=1.15.74
+ModMinMsc=1.15.75
 Etiquette=Standalone, RallyWorld
 EtiquetteMsc=Standalone, RallyWorld
 
