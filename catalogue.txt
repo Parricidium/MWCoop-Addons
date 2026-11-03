@@ -68,19 +68,19 @@ Etiquette=Standalone
 EtiquetteMsc=Standalone
 
 [sq84]
-Version=1.5
+Version=1.6
 Nom=Audy Sport Quatro
 NomCourt=Sport Quatro
 Description=Gr. B 1984 · 450 ch · 4 roues motrices
 DescriptionEn=Gr. B 1984 · 450 hp · four-wheel drive
 Categorie=Gr. B
 Livree=1
-Taille=27330530
-Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/sq84-1.5/sq84-1.5.zip
+Taille=27463215
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/sq84-1.6/sq84-1.6.zip
 Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/sq84.png
-ModMin=1.15.42
+ModMin=1.15.43
 ApercuMsc=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/sq84-msc.png
-ModMinMsc=1.15.74
+ModMinMsc=1.15.75
 Etiquette=Standalone, RallyWorld
 EtiquetteMsc=Standalone, RallyWorld
 
