@@ -19,18 +19,25 @@ FR
 Installation : lanceur MWCoop, Addons, bouton Telecharger (les mises a jour arrivent au meme endroit).
 A la main : copier le dossier {cle} dans <jeu>\\MWCoop\\addons.
 En jeu : F10, onglet Voitures, bouton {court}. Les joueurs qui ne l'ont pas voient une VAZ-2108.
-Modele 3D, textures et sons : mod rFactor 1 "Rally Cars" (RC), tout le merite revient a leurs auteurs d'origine ;
-marques et logos retires, conversion pour MWCoop par Parricidium. Auteur d'origine et tu veux qu'elle soit retiree :
+{credits}
+Auteur d'origine et tu veux qu'elle soit retiree :
 ouvre une issue sur https://github.com/{depot} (ou dis-le sur le Discord de MWCoop), elle le sera.
 
 EN
 Install: MWCoop launcher, Add-ons, Download button (updates come the same way).
 By hand: copy the {cle} folder into <game>\\MWCoop\\addons.
 In game: F10, Cars tab, {court} button. Players without it see a VAZ-2108.
-3D model, textures and sounds: rFactor 1 "Rally Cars" (RC) mod, all credit to their original authors; brands and
-logos removed, converted for MWCoop by Parricidium. Original author and you want it removed: open an issue on
+{credits_en}
+Original author and you want it removed: open an issue on
 https://github.com/{depot} (or say so on the MWCoop Discord) and it will be.
 """
+
+
+# (credits par defaut : mod rFactor 1 « Rally Cars » ; Credits= / CreditsEn= de addon.ini les remplacent -- voitures de Rallyworld, 04/11)
+CREDITS = ("Modele 3D, textures et sons : mod rFactor 1 \"Rally Cars\" (RC), tout le merite revient a leurs auteurs d'origine ;\n"
+           "marques et logos retires, conversion pour MWCoop par Parricidium.")
+CREDITS_EN = ("3D model, textures and sounds: rFactor 1 \"Rally Cars\" (RC) mod, all credit to their original authors; brands and\n"
+              "logos removed, converted for MWCoop by Parricidium.")
 
 
 def lire_ini(chemin):
@@ -102,7 +109,8 @@ def main():
         lignes = [l for l in open(os.path.join(st, "addon.ini"), encoding="utf-8-sig").read().splitlines() if not l.startswith("Version=")]
         lignes.insert(1 if lignes and lignes[0].startswith("[") else 0, "Version=" + ver)
         open(os.path.join(st, "addon.ini"), "w", encoding="utf-8", newline="\r\n").write("\n".join(lignes) + "\n")
-        open(os.path.join(st, "LISEZMOI.txt"), "w", encoding="utf-8", newline="\r\n").write(LISEZMOI.format(nom=nom, ver=ver, cle=cle, court=court, depot=DEPOT))
+        open(os.path.join(st, "LISEZMOI.txt"), "w", encoding="utf-8", newline="\r\n").write(LISEZMOI.format(nom=nom, ver=ver, cle=cle, court=court, depot=DEPOT,
+                                                                                   credits=ini.get("Credits", CREDITS), credits_en=ini.get("CreditsEn", CREDITS_EN)))
         with zipfile.ZipFile(paquet, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
             for r, _, fs in os.walk(st):
                 for f in sorted(fs):
