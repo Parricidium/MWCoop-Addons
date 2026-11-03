@@ -85,18 +85,18 @@ Etiquette=Standalone, RallyWorld
 EtiquetteMsc=Standalone, RallyWorld
 
 [t16e2]
-Version=1.3
+Version=1.4
 Nom=Peujot 205 T16 Ebo 2
 NomCourt=205 Ebo 2
 Description=Gr. B 1986 · 450 ch · 4 roues motrices
 DescriptionEn=Gr. B 1986 · 450 hp · four-wheel drive
 Categorie=Gr. B
 Livree=1
-Taille=23386853
-Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/t16e2-1.3/t16e2-1.3.zip
+Taille=23600898
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/t16e2-1.4/t16e2-1.4.zip
 Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/t16e2.png
-ModMin=1.15.42
+ModMin=1.15.43
 ApercuMsc=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/t16e2-msc.png
-ModMinMsc=1.15.74
+ModMinMsc=1.15.75
 Etiquette=Standalone, RallyWorld
 EtiquetteMsc=Standalone, RallyWorld
