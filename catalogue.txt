@@ -51,19 +51,19 @@ Etiquette=Standalone, RallyWorld
 EtiquetteMsc=Standalone, RallyWorld
 
 [m3e30]
-Version=1.0
+Version=1.1
 Nom=BMV M3 E30
 NomCourt=M3 E30
 Description=Gr. A 1987 · 300 ch · propulsion
 DescriptionEn=Gr. A 1987 · 300 hp · rear-wheel drive
 Categorie=Gr. A
 Livree=1
-Taille=40185546
-Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/m3e30-1.0/m3e30-1.0.zip
+Taille=41103208
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/m3e30-1.1/m3e30-1.1.zip
 Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/m3e30.png
-ModMin=1.15.44
+ModMin=1.15.78
 ApercuMsc=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/m3e30-msc.png
-ModMinMsc=1.15.76
+ModMinMsc=1.15.111
 Etiquette=Standalone, RallyWorld
 EtiquetteMsc=Standalone, RallyWorld
 
