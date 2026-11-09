@@ -1,5 +1,22 @@
 ; Catalogue des voitures addons de MWCoop, lu par le lanceur (onglet Addons). Genere par publier.py.
 
+[bx4tc]
+Version=1.0
+Nom=Sitroen BX 4TC
+NomCourt=BX 4TC
+Description=Gr. B 1986 · 380 ch · intégrale
+DescriptionEn=Gr. B 1986 · 380 hp · four-wheel drive
+Categorie=Gr. B
+Livree=1
+Taille=28258571
+Paquet=https://github.com/Parricidium/MWCoop-Addons/releases/download/bx4tc-1.0/bx4tc-1.0.zip
+Apercu=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/bx4tc.png
+ModMin=1.15.79
+ApercuMsc=https://raw.githubusercontent.com/Parricidium/MWCoop-Addons/main/apercus/bx4tc-msc.png
+ModMinMsc=1.15.112
+Etiquette=Standalone, RallyWorld
+EtiquetteMsc=Standalone, RallyWorld
+
 [delta8]
 Version=1.1
 Nom=Lancha Delta Ebo II
